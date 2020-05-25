@@ -1,0 +1,162 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.gradient {
+    text-align: center;
+    width: 81.5rem;
+    height: 35rem;
+    padding: 3rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.gradient__text {
+
+}
+.gradient__text--small {
+font-size: 1.2rem;
+font-weight: 700;
+letter-spacing: 0.3rem;
+background-image: linear-gradient(to right, #AAACB7, #7A7C8E);
+color: transparent;
+-webkit-background-clip: text;
+display: inline-block;
+}
+.gradient__text--big {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    margin-top: 1.2rem;
+    color: #222746;
+}
+.gradient--button {
+    margin-top: 5.5rem;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+    color: white;
+  
+    outline: none;
+    border: 0;
+    border-radius: 0.5rem;
+    margin: 3rem ;
+
+    width: 16rem;
+    height: 4rem;
+    box-sizing: border-box;
+}
+.btn--green {
+    background-image: linear-gradient(to left, #4FCCC8, #68ECAC);
+    box-shadow: 0 0.8rem 1.5rem 0.8rem #CEF5EA;
+    transition: 0.3s;
+}
+.btn--green:hover {
+ background-image: linear-gradient(to left, );
+}
+.btn--blue {
+    background-image: linear-gradient(to right, #ACE4FF, #72B5ED);
+    box-shadow: 0 0.8rem 1.5rem 0.8rem #DAEDFB;
+}
+.btn--purple {
+    background-image: linear-gradient(90deg, #B0BFFF, #AE8BF1);
+    box-shadow: 0 0.8rem 1.5rem 0.8rem #E6E0FB;
+}
+.btn--orange {
+    background-image: linear-gradient(to right, #FFD699, #FEA260);
+    box-shadow: 0 0.8rem 1.5rem 0.8rem #FCE7D1;
+}
+.btn--red {
+    background-image: linear-gradient(to right, #FEC2AD, #ED7573);
+    box-shadow: 0 0.8rem 1.5rem 0.8rem #F8D7D4;
+}
+.btn--pink {
+    background-image: linear-gradient(-90deg, #F5839B, #FFABB8);
+    box-shadow: 0 0.8rem 1.5rem 0.8rem #FCD8DF;
+}
+
+/* text gradient */
+.text-gradient {
+    font-size: 12rem;
+    font-weight: 700;
+
+    width: 32rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(135deg, #FFDA6A, #FF12A5);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* icons gradient */
+.icons {
+    width: 15rem;
+    font-size: 25px;
+    margin: 3rem auto;
+    background-image: linear-gradient(to right, #ffda64, #ff12a5);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.fa {
+    margin: 1rem;
+}
+/* ex 3: child - type */
+.colors{
+    width: 100%;
+   text-align: center;
+   padding: 10rem;
+   box-sizing: border-box;
+}
+.color-item {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+}
+.color-item__title {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    text-align: left;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.color-item__desc {
+    text-align: left;
+}
+.color-item__box {
+    width: 8rem;
+    height: 8rem;
+}
+.color-item__box:first-child {
+    background-color: purple;
+}
+.color-item__box:last-child {
+    background-color:white;
+}
+/* ex6: selector */
+div[data-link^="https"] {
+    color: tomato;
+    text-align: center;
+}
+div[data-link $= "vn"] {
+    color: #72B5ED;
+    text-align: center;
+}
+div[data-name *= "hello"] {
+    background-color: #F5839B;
+    color: white;
+    text-align: center;
+}
+input[type="email"] {
+    background-color:lightblue;
+}
+input[name = "fullname"] {
+background-color: lightpink;
+}
