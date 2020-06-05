@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<!--ex1 - dropdown-->
+<div class="ex1">
+<div class="dropdown">
+    <div class="dropdown-select">
+        <span class="dropdown__text">call to action</span>
+        <i class="fa fa-caret-down icon"></i>
+    </div>
+    <div class="dropdown-list">
+        <div class="dropdown-list__item">
+            <span class="dropdown__text">new project</span>
+            <i class="fa fa-plus-circle icon" aria-hidden="true"></i>
+        </div>
+        <div class="dropdown-list__item">
+            <span class="dropdown__text">view profile</span>
+            <i class="fa fa-user icon" aria-hidden="true"></i>
+        </div>
+        <div class="dropdown-list__item">
+            <span class="dropdown__text">settings</span>
+            <i class="fa fa-cog icon" aria-hidden="true"></i>
+        </div>
+        <div class="dropdown-list__item">
+            <span class="dropdown__text">logout</span>
+            <i class="fa fa-sign-out icon" aria-hidden="true"></i>
+        </div>
+    </div>
+
+</div>
+</div>
+<!-- ex2 - simple-form -->
+<div class="ex2">
+    <div class="simple-form">
+        <input class="simple-form__input" placeholder="Search">
+        <div class="simple-form__btn"><i class="fa fa-search" aria-hidden="true"></i></div>
+    </div>
+</div>
+
+<!-- ex3 - form  -->
+<div class="ex3">
+    <form action="" class="form">
+        <div class="form-group">
+            <label for="full_name" class="form-item__label">Full name</label>
+            <input type="text" id="full_name">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-item__label">Email address</label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="message" class="form-item__label">Message</label>
+            <textarea type="text" id="message"></textarea>
+        </div>
+        <div class="form-bottom">
+            <div class="form-bottom__checkbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Accept <a href="#">terms & conditions</a> </label>
+            </div>
+            <div href="" class="form-bottom__btn">
+                <span>Send</span>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- ex4 - check-box  -->
+<div class="check-box">
+    <label for="toggle-input" class="toggle">
+        <input type="checkbox" id="toggle-input" class="toggle__input">
+        <div class="toggle__bar">
+            <div class="toggle__spin"></div>
+        </div>
+    </label>
+    <label for="toggle-input2" class="toggle">
+        <input type="checkbox" id="toggle-input2" class="toggle__input">
+        <div class="toggle__bar">
+            <div class="toggle__spin"></div>
+        </div>
+    </label>
+</div>
+<!-- ex6 - smile -->
+<!-- Vì sao bài này font-size cùa icon em ko css được
+  ở class smile__icon mà phải css ở smile__icon::before,
+  còn những thuộc tính khác (color...) css được ở smile__icon
+-->
+<div class="smile">
+    <img class="smile__picture"
+         src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60"
+         alt="">
+    <div class="smile__layer2"></div>
+    <i class="fa fa-play-circle-o smile__icon"></i>
+</div>
+<!-- ex7 - animation  -->
+<div class="animation">
+    <h2 class="animation__title">animation</h2>
+    <div class="animation__content">
+        <div class="animation__box changeColor"></div>
+        <div class="animation__box changeText">Hello</div>
+        <div class="animation__box rotate"></div>
+    </div>
+</div>
+</body>
+</html>

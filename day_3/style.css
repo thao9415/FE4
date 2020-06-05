@@ -1,0 +1,405 @@
+:root {
+    --background-color: #2d3e50;
+    --primary-color: #de4a3e;
+    --secondary--color: #c64236;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*ex1 - dropdown*/
+.ex1 {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown {
+    width: 47.5rem;
+}
+
+.dropdown-select {
+    background-color: var(--primary-color);
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dropdown__text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.dropdown i {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.dropdown-list {
+    border-radius: 0.6rem;
+    background-color: var(--primary-color);
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.dropdown-list:before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    top: -1.2rem;
+    left: 3.5rem;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+.dropdown:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-list__item {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.6rem;
+}
+
+.dropdown-list__item:hover {
+    background-color: var(--secondary--color);
+}
+
+/*ex2 - simple-form*/
+.ex2 {
+    width: 100%;
+    height: 50vh;
+    background-color: #EAEDF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple-form {
+    width: 46rem;
+    height: 10rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.simple-form__input {
+    width: 28rem;
+    height: 5rem;
+    margin: 0 auto;
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    outline: none;
+}
+
+.simple-form__input::-webkit-input-placeholder {
+    color: #b2b3b8;
+}
+
+.simple-form__btn {
+    width: 10rem;
+    height: 10rem;
+    background-color: #5AEED1;
+    box-shadow: -5px 0 35px #5be2c7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/* ex3 - form */
+
+.ex3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 43rem;
+}
+
+.form-group {
+    margin-bottom: 3rem;
+}
+
+.form-item__label {
+    display: inline-block;
+    margin-bottom: 1.4rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #929292;
+}
+
+#full_name, #email {
+    width: 100%;
+    height: 5rem;
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    outline: none;
+}
+
+#message {
+    width: 100%;
+    height: 18.5rem;
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    outline: none;
+    resize: none;
+}
+
+#full_name:focus, #email:focus, #message:focus {
+    border-color: #2979ff;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-bottom__btn {
+    background-color: #3B41FE;
+    color: white;
+    width: 15rem;
+    height: 4.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-bottom__checkbox {
+    display: flex;
+    align-items: center;
+}
+
+#checkbox {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+label[for="checkbox"] {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+label[for="checkbox"] a {
+    color: rgba(55, 61, 238, 0.84);
+}
+
+/* ex4 - check-box */
+.smile {
+    position: relative;
+    width: 45rem;
+    height: 26rem;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smile__picture {
+    position: absolute;
+    width: 100%;
+    position: absolute;
+}
+
+.smile__layer2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #06060654;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.smile__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.smile__icon::before {
+    font-size: 10rem;
+}
+
+.smile:hover .smile__layer2 {
+    opacity: 1;
+}
+
+.smile:hover .smile__icon {
+    opacity: 1;
+}
+
+/*check-box*/
+.check-box {
+    width: 100%;
+    height: 100vh;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.toggle {
+    cursor: pointer;
+}
+
+.toggle:first-child {
+    margin-right: 5rem;
+}
+
+.toggle__input {
+    display: none;
+}
+
+.toggle__bar {
+    width: 8rem;
+    height: 4rem;
+    background-color: #eee;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+.toggle__spin {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.toggle__input:checked + .toggle__bar {
+    background-color: #6EDC5F;
+}
+
+.toggle__input:checked + .toggle__bar .toggle__spin {
+    transform: translateX(4rem);
+}
+
+/*ex7 - animation*/
+.animation {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.animation__title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    font-size: 3rem;
+}
+
+.animation__content {
+    display: flex;
+    margin-top: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation__box {
+    width: 10rem;
+    height: 10rem;
+    margin: 5rem;
+    background-color: tomato;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: tomato;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.changeColor {
+    animation: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes changeText {
+    from {
+        font-size: 1rem;
+    }
+    to {
+        font-size: 1.8rem;
+    }
+}
+
+.changeText {
+    color: white;
+    text-transform: uppercase;
+    line-height: 10rem;
+    position: relative;
+    animation-name: changeText;
+    animation-iteration-count: 5;
+    animation-duration: 1s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(-180deg);
+    }
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-iteration-count: 5;
+    animation-duration: 1s;
+}
